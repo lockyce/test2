@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -46,19 +46,20 @@
 
         /* Hero Section */
         .hero {
-            height: 100vh;
-            background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), 
-                        url('https://unsplash.com');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-            color: var(--dark-text);
-        }
+    height: 100vh;
+    /* Установлена прямая ссылка на фото из альбома ВК */
+    background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), 
+                url('https://sun9-66.vkuserphoto.ru/s/v1/ig2/_66avzb24XPD73Tq-6c_Yz5wCO0BgS2IbQdYU6OcU6qc8I30LXn5ISefaSDQKsBIVNSbOZ7bdM8_DsHw_XqVYqd3.jpg?quality=95&as=32x24,48x36,72x54,108x81,160x120,240x180,360x270,480x360,540x405,640x480,720x540,1080x810,1280x960,1440x1080,2560x1920&from=bu&cs=1280x0');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: var(--dark-text);
+}
 
         .hero h1 { font-size: 4rem; margin-bottom: 20px; color: var(--dark-text); text-transform: uppercase; text-shadow: 1px 1px 10px rgba(255,255,255,0.5); }
         .hero p { font-size: 1.5rem; max-width: 800px; margin-bottom: 30px; font-weight: 500; }
@@ -127,23 +128,27 @@
 <body>
 
     <nav>
-        <div class="logo">Наследие Предков</div>
+        <div class="logo">Центр живой истории</div>
         <ul>
             <li><a href="#about">О нас</a></li>
-            <li><a href="#eras">Эпохи</a></li>
+            <li><a href="#eras">Наши направления</a></li>
             <li><a href="#join">Вступить</a></li>
         </ul>
     </nav>
 
     <div class="hero">
-        <h1>Ожившая История</h1>
+        <h1>Прикоснись к истории</h1>
         <p>Мы воссоздаем быт, ремесла и воинское искусство прошлых веков. Почувствуй дух времени вместе с нами.</p>
+
         <a href="#join" class="btn">Стать рекрутом</a>
     </div>
 
     <section id="about">
         <h2>О нашем клубе</h2>
-        <p style="text-align: center; font-size: 1.2rem;">Наш клуб занимается профессиональной реконструкцией материальной культуры Средневековья и Античности. Мы шьем костюмы по археологическим находкам, куем доспехи и проводим полноконтактные турниры.</p>
+        <p style="text-align: center; font-size: 1.2rem;">Просветительский проект 
+«Центр живой истории» организует и проводит исторические образовательные мероприятия для детей и взрослых.
+
+Предлагаем проведение уроков живой истории для учащихся школ и детских лагерей.</p>
     </section>
 
     <section id="eras" style="background: #222; max-width: 100%;">
@@ -151,16 +156,22 @@
             <h2 style="color: var(--primary-gold);">Наши направления</h2>
             <div class="grid">
                 <div class="card">
-                    <h3>Раннее Средневековье</h3>
-                    <p>Эпоха викингов и Древней Руси. Суровый быт, драккары и щитовой строй.</p>
+                    <h3> Мастер-классы:</h3>
+                    <p>Обучение старинным ремеслам с увлекательным рассказом и наглядной демонстрацией.
+			Результаты своего творчества дети забирают с собой!
+			</p>
                 </div>
                 <div class="card">
-                    <h3>Высокое Средневековье</h3>
-                    <p>Рыцарские турниры, тяжелые доспехи и эпоха великих походов.</p>
+                    <h3>Интерактивный лекторий:</h3>
+                    <p>Увлекательные рассказы об истории, с демонстрацией старинных предметов материальной культуры и их точных  копий
+			После рассказа детей ожидает фотосессия с предметами старины!
+			</p>
                 </div>
                 <div class="card">
-                    <h3>Ремесленная палата</h3>
-                    <p>Ткачество, кузнечное дело и кулинария по старинным рецептам.</p>
+                    <h3>Занятия физической активности:</h3>
+                    <p>Обучение старинным подвижным играм, танцам, хороводам (с возможностью проведения занятий на свежем воздухе)
+			Активный досуг со смыслом!
+			</p>
                 </div>
             </div>
         </div>
@@ -173,7 +184,7 @@
         <input type="text" name="name" placeholder="Ваше имя" required>
         <input type="email" name="email" placeholder="Email" required>
         <textarea name="message" rows="5" placeholder="Сообщение"></textarea>
-        <button type="submit" class="btn">Отправить через Python</button>
+        <button type="submit" class="btn">Отправить</button>
     </form>
 </section>
 
